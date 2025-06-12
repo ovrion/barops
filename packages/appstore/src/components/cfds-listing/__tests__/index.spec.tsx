@@ -1,12 +1,13 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import { StoreProvider, mockStore } from '@deriv/stores';
+
 import {
-    useMT5SVGEligibleToMigrate,
-    useTradingPlatformStatus,
     useGrowthbookGetFeatureValue,
     useIsEnabledNakala,
+    useMT5SVGEligibleToMigrate,
+    useTradingPlatformStatus,
 } from '@deriv/hooks';
+import { mockStore, StoreProvider } from '@deriv/stores';
+import { render, screen } from '@testing-library/react';
 
 import CFDsListing from '../index';
 
