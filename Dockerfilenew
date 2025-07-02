@@ -1,0 +1,20 @@
+# 1. 베이스 이미지 설정: deriv-app이 요구하는 정확한 Node.js와 npm 버전을 사용
+FROM node:18.17.1-bullseye
+
+# 2. 작업 디렉토리 설정
+WORKDIR /app
+
+# 3. Vercel의 NX 캐시를 위한 설정 (성능 최적화)
+ARG VERCEL_ANALYTICS_ID
+ENV VERCEL_ANALYTICS_ID=${VERCEL_ANALYTICS_ID}
+
+# 4. 프로젝트 파일 복사
+COPY . .
+
+# 5. 의존성 설치 및 빌드 실행
+#    - npm ci: package-lock.json을 기반으로 정확한 버전의 패키지를 설치 (npm install 보다 안정적)
+#    - nx build trader --prod: trader 앱을 빌드
+RUN npm ci && npx nx build trader --prod
+
+# 6. Vercel이 빌드 결과물을 찾을 수 있도록 경로 지정
+#    이 부분은 Vercel 설정에서 Output Directory로 대체되므로 Dockerfile 자체에는 필요 없습니다.
