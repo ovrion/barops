@@ -5,7 +5,8 @@
         "packages/*"
     ],
     "engines": {
-        "node": "18.x"
+        "node": "18.x",
+        "npm": "9.x"
     },
     "overrides": {
         "eslint": "^8.57.1",
@@ -103,6 +104,7 @@
         "stylelint:fix": "stylelint \"./packages/*/src/**/*.s(a|c)ss\" --fix",
         "translate": "f () { npm exec --workspace=@deriv/translations -- npm run translate ;}; f",
         "stylelint-check": "stylelint-config-prettier-check",
+        "vercel-build": "npm install && npx nx build trader --prod",
         "prepare": "husky install"
     },
     "dependencies": {
