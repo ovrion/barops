@@ -1,12 +1,15 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { withRouter } from 'react-router';
+import { withRouter, Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import { UILoader } from '@deriv/components';
 import { urlForLanguage } from '@deriv/shared';
 import { getLanguage } from '@deriv/translations';
 import BinaryRoutes from 'App/Components/Routes';
 import { observer, useStore } from '@deriv/stores';
+
+// 여기 OauthCallback import 추가
+import OauthCallback from 'Modules/Callback/OauthCallback';
 
 const Error = Loadable({
     loader: () => import(/* webpackChunkName: "error-component" */ 'App/Components/Elements/Errors'),
@@ -66,7 +69,18 @@ const Routes = observer(({ history, location, passthrough }) => {
         window.history.replaceState({}, document.title, urlForLanguage(lang));
     }
 
-    return <BinaryRoutes is_logged_in={is_logged_in} is_logging_in={is_logging_in} passthrough={passthrough} />;
+    return (
+        <Switch>
+            {/* 여기에 /oauth-callback 경로 추가 */}
+            <Route path='/oauth-callback' component={OauthCallback} />
+            {/* 기존 BinaryRoutes는 기본 라우트 */}
+            <Route
+                render={() => (
+                    <BinaryRoutes is_logged_in={is_logged_in} is_logging_in={is_logging_in} passthrough={passthrough} />
+                )}
+            />
+        </Switch>
+    );
 });
 
 Routes.propTypes = {
