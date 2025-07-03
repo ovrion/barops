@@ -5,7 +5,7 @@ import DerivBrandShortLogo from 'Assets/SvgComponents/header/deriv-logo-short.sv
 const DerivShortLogo = () => {
     return (
         <div className='header__menu-left-logo'>
-            <StaticUrl href='/'>
+            <StaticUrl href='https://baroption.com/'>
                 <DerivBrandShortLogo />
             </StaticUrl>
         </div>
