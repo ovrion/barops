@@ -12,23 +12,23 @@
     },
     "platforms": {
         "trader": {
-            "name": "Deriv Trader",
+            "name": "Bar option Trader",
             "icon": "IcRebrandingDerivTrader"
         },
         "dbot": {
-            "name": "Deriv Bot",
+            "name": "Bar option Bot",
             "icon": "IcRebrandingDerivBot"
         },
         "mt5": {
-            "name": "Deriv MT5",
+            "name": "Bar option MT5",
             "icon": "IcRebrandingDmt5"
         },
         "ctrader": {
-            "name": "Deriv cTrader",
+            "name": "Bar option cTrader",
             "icon": "IcRebrandingCtrader"
         },
         "dxtrade": {
-            "name": "Deriv X",
+            "name": "Bar option X",
             "icon": "IcRebrandingDxtrade"
         },
         "smarttrader": {
@@ -36,18 +36,18 @@
             "icon": "IcRebrandingSmarttrader"
         },
         "go": {
-            "name": "Deriv GO",
+            "name": "Bar option APP",
             "icon": "IcRebrandingDerivGo"
         }
     },
     "platforms_appstore": {
         "trader": {
-            "name": "Deriv Trader",
+            "name": "Bar option Trader",
             "icon": "DTrader",
             "availability": "All"
         },
         "dbot": {
-            "name": "Deriv Bot",
+            "name": "Bar option Bot",
             "icon": "DBot",
             "availability": "Non-EU"
         },
@@ -57,7 +57,7 @@
             "availability": "Non-EU"
         },
         "go": {
-            "name": "Deriv GO",
+            "name": "Bar option APP",
             "icon": "DerivGo",
             "availability": "Non-EU"
         },

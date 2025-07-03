@@ -42,7 +42,7 @@ export const getOptionsAndMultipliersContent = (
             : localize('The options and multipliers trading platform.'),
         key: 'trader',
         redirect: '/dtrader',
-        title: 'Deriv Trader',
+        title: 'Bar option Trader',
     },
     {
         availability: 'Non-EU',
@@ -50,7 +50,7 @@ export const getOptionsAndMultipliersContent = (
         isExternal: true,
         key: 'bot',
         redirect: appendSearchParamsToUrl(getUrlBot()),
-        title: 'Deriv Bot',
+        title: 'Bar option Bot',
     },
     {
         availability: 'Non-EU',
@@ -66,7 +66,7 @@ export const getOptionsAndMultipliersContent = (
         isExternal: true,
         key: 'derivgo',
         redirect: getStaticUrl('/deriv-go'),
-        title: 'Deriv GO',
+        title: 'Bar option APP',
     },
 ];
 
