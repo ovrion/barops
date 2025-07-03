@@ -310,11 +310,11 @@ export const getAccountListKey = (account: TAccount, platform: TPlatform, shortc
 export const getCFDPlatformLabel = (platform: TPlatform) => {
     switch (platform) {
         case CFD_PLATFORMS.MT5:
-            return 'Deriv MT5';
+            return 'Bar option MT5';
         case CFD_PLATFORMS.DXTRADE:
-            return 'Deriv X';
+            return 'Bar option X';
         case CFD_PLATFORMS.CTRADER:
-            return 'Deriv cTrader';
+            return 'Bar option cTrader';
         default:
             return '';
     }
@@ -325,7 +325,7 @@ export const getCFDPlatformNames = (platform: TPlatform) => {
         case CFD_PLATFORMS.MT5:
             return 'MT5';
         case CFD_PLATFORMS.DXTRADE:
-            return 'Deriv X';
+            return 'Bar option X';
         case CFD_PLATFORMS.CTRADER:
             return 'cTrader';
         default:

@@ -28,7 +28,7 @@ const CFDsListingLoggedOut = observer(() => {
         <ListingContainer title={<CFDsTitle />} description={<CFDsDescription />}>
             <div className='cfds-listing-logged-out__cfd-full-row'>
                 <Text line_height='m' weight='bold' color='prominent'>
-                    {localize('Deriv MT5')}
+                    {localize('Bar option MT5')}
                 </Text>
             </div>
             {combined_cfd_mt5_accounts.map((existing_account, index: number) => {
@@ -64,7 +64,7 @@ const CFDsListingLoggedOut = observer(() => {
             )}
             {!is_eu_user && (
                 <div className='cfds-listing-logged-out__cfd-full-row'>
-                    <Text weight='bold'>{localize('Deriv cTrader')}</Text>
+                    <Text weight='bold'>{localize('Bar option cTrader')}</Text>
                 </div>
             )}
             {available_ctrader_accounts.map(account => (
@@ -89,7 +89,7 @@ const CFDsListingLoggedOut = observer(() => {
 
                     <div className='cfds-listing-logged-out__cfd-full-row'>
                         <Text line_height='m' weight='bold' color='prominent'>
-                            {localize('Deriv X')}
+                            {localize('Bar option X')}
                         </Text>
                     </div>
                 </React.Fragment>

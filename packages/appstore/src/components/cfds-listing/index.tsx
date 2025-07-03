@@ -222,7 +222,7 @@ const CFDsListing = observer(() => {
             <AddDerivAccount />
             <div className='cfd-full-row' style={{ paddingTop: '2rem' }}>
                 <Text line_height='m' weight='bold' color='prominent'>
-                    {localize('Deriv MT5')}
+                    {localize('Bar option MT5')}
                 </Text>
             </div>
             {has_svg_accounts_to_migrate && is_landing_company_loaded && <MigrationBanner />}
@@ -377,7 +377,7 @@ const CFDsListing = observer(() => {
                                 <hr className='divider' />
                             </div>
                             <div className='cfd-full-row' style={{ paddingTop: '2rem' }}>
-                                <Text weight='bold'>{localize('Deriv cTrader')}</Text>
+                                <Text weight='bold'>{localize('Bar option cTrader')}</Text>
                             </div>
                         </>
                     )}
@@ -517,7 +517,7 @@ const CFDsListing = observer(() => {
 
                         <div className='cfd-full-row'>
                             <Text line_height='m' weight='bold' color='prominent'>
-                                {localize('Deriv X')}
+                                {localize('Bar option X')}
                             </Text>
                         </div>
                     </React.Fragment>
