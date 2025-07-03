@@ -18,19 +18,19 @@ jest.mock('../../../constants', () => ({
     PlatformDetails: {
         ctrader: {
             platform: 'ctrader',
-            title: 'Deriv cTrader',
+            title: 'Bar option cTrader',
         },
         dxtrade: {
             platform: 'dxtrade',
-            title: 'Deriv X',
+            title: 'Bar option X',
         },
         mt5: {
             platform: 'mt5',
-            title: 'Deriv MT5',
+            title: 'Bar option MT5',
         },
         mt5Investor: {
             platform: 'mt5',
-            title: 'Deriv MT5 investor',
+            title: 'Bar option MT5 investor',
         },
     },
 }));

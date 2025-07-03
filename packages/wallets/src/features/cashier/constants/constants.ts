@@ -103,7 +103,7 @@ export const MT5MarketTypeDetails: Record<TMarketTypes.All, TMT5MarketTypeDetail
 export const PlatformDetails = {
     ctrader: {
         name: 'ctrader',
-        title: 'Deriv cTrader',
+        title: 'Bar option cTrader',
     },
     derivez: {
         name: 'derivez',
@@ -111,12 +111,12 @@ export const PlatformDetails = {
     },
     dxtrade: {
         name: 'dxtrade',
-        title: 'Deriv X',
+        title: 'Bar option X',
     },
     mt5: {
         marketType: { ...MT5MarketTypeDetails },
         name: 'mt5',
-        title: 'Deriv MT5',
+        title: 'Bar option MT5',
     },
     standard: {
         name: 'standard',

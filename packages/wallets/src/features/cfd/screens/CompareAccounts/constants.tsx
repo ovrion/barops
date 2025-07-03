@@ -46,8 +46,8 @@ export const JURISDICTION = {
 } as const;
 
 export const platformLabel = (localize: ReturnType<typeof useTranslations>['localize']) => ({
-    CTrader: 'Deriv cTrader',
-    DerivX: 'Deriv X',
+    CTrader: 'Bar option cTrader',
+    DerivX: 'Bar option X',
     MT5: localize('MT5 Platform'),
     OtherCFDs: localize('Other CFDs Platform'),
 });

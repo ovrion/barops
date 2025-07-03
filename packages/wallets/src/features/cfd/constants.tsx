@@ -110,26 +110,26 @@ export const PlatformDetails = {
         icon: <AccountsDerivCtraderIcon height={48} width={48} />,
         link: 'https://onelink.to/5jgj8z',
         platform: 'ctrader' as TPlatforms.OtherAccounts,
-        title: 'Deriv cTrader',
+        title: 'Bar option cTrader',
     },
     dxtrade: {
         availability: 'Non-EU',
         icon: <AccountsDerivXIcon height={48} width={48} />,
         link: 'https://onelink.to/grmtyx',
         platform: 'dxtrade' as TPlatforms.OtherAccounts,
-        title: 'Deriv X',
+        title: 'Bar option X',
     },
     mt5: {
         icon: <AccountsDmt5StandardIcon height={48} width={48} />,
         link: 'https://onelink.to/xf26jx',
         platform: 'mt5' as TPlatforms.MT5,
-        title: 'Deriv MT5',
+        title: 'Bar option MT5',
     },
     mt5Investor: {
         icon: <AccountsDmt5StandardIcon height={48} width={48} />,
         link: 'https://onelink.to/xf26jx',
         platform: 'mt5' as TPlatforms.MT5,
-        title: localize('Deriv MT5 Investor'),
+        title: localize('Bar option MT5 Investor'),
     },
 } as const;
 

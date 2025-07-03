@@ -1,10 +1,10 @@
 import { localize } from '@deriv/translations';
 
 export const CFD_TEXT = {
-    dxtrade: () => localize('Deriv X'),
+    dxtrade: () => localize('Bar option X'),
     mt5: () => localize('MT5'),
     mt5_cfds: () => localize('MT5 CFDs'),
-    ctrader: () => localize('Deriv cTrader'),
+    ctrader: () => localize('Bar option cTrader'),
     cfd: () => localize('CFDs'),
     synthetic: () => localize('Standard'),
     synthetic_demo: () => localize('Standard Demo'),

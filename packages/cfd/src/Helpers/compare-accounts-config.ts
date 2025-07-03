@@ -101,9 +101,9 @@ const getAccountCardTitle = (shortcode: string, is_demo?: boolean) => {
         case MARKET_TYPE_SHORTCODE.ALL_ZERO_SPREAD_BVI:
             return is_demo ? localize('Zero Spread demo') : localize('Zero Spread');
         case CFD_PLATFORMS.DXTRADE:
-            return is_demo ? localize('Deriv X demo') : localize('Deriv X');
+            return is_demo ? localize('Bar option X demo') : localize('Bar option X');
         case CFD_PLATFORMS.CTRADER:
-            return is_demo ? localize('Deriv cTrader demo') : localize('Deriv cTrader');
+            return is_demo ? localize('Bar option cTrader demo') : localize('Bar option cTrader');
         default:
             return is_demo ? localize('CFDs demo') : localize('CFDs');
     }
@@ -113,11 +113,11 @@ const getAccountCardTitle = (shortcode: string, is_demo?: boolean) => {
 const getPlatformLabel = (shortcode?: string) => {
     switch (shortcode) {
         case CFD_PLATFORMS.DXTRADE:
-            return localize('Deriv X');
+            return localize('Bar option X');
         case CFD_PLATFORMS.CFDS:
             return localize('Other CFDs Platform');
         case CFD_PLATFORMS.CTRADER:
-            return localize('Deriv cTrader');
+            return localize('Bar option cTrader');
         case CFD_PLATFORMS.MT5:
         default:
             return localize('MT5 Platform');
@@ -127,8 +127,8 @@ const getPlatformLabel = (shortcode?: string) => {
 // Object to map the platform label
 const platformsHeaderLabel = {
     mt5: localize('MT5 Platform'),
-    ctrader: localize('Deriv cTrader'),
-    derivx: localize('Deriv X'),
+    ctrader: localize('Bar option cTrader'),
+    derivx: localize('Bar option X'),
     other_cfds: localize('Other CFDs Platform'),
 };
 
